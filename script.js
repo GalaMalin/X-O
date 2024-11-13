@@ -61,8 +61,8 @@ btn_contin.addEventListener("click", startGame0);
 // ячейки
 const cells = document.querySelectorAll('.cell');
 // картинки игрока X и O
-const X_IMAGE = '/PIC/pic01.png';
-const O_IMAGE = '/PIC/pic02.png';
+const X_IMAGE = '/pic01.png';
+const O_IMAGE = '/pic02.png';
 // играющий игрок, первый X
 let currentPlayer = 'X';
 
