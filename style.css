@@ -1,0 +1,157 @@
+body {
+    color: #3C3C3C;
+    font-family: 'Open Sans Condensed', sans-serif;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+/* Общий блок */
+.play_game {    
+    text-align: center;    
+}    
+
+/* Блок заголовка */
+.zag {    
+    font-size: 50px;
+    font-weight: bold; 
+    margin-bottom: 25px;
+}
+
+/* Картинка */
+img {
+    width: 100%;
+}
+
+/* Блок картинки */
+.zag_img {
+    margin: 25px auto;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Блок надписей (обертка)*/
+.button_start {        
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}    
+
+/* Блок кнопки Начнем! (кнопка)*/
+.btn {
+    line-height: 80px;
+    height: 80px;
+    text-align: center;    
+    width: 350px;
+    cursor: pointer;
+    margin-top: 70px;    
+}
+ 
+.btn-two {
+    transition: all 0.5s;
+    position: relative; 
+}
+
+.btn-two span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    color: #3C3C3C;
+    font-size: 25px;    
+}
+
+.btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 2px solid #07b4f9;    
+}
+.btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 2px solid #07b4f9;    
+}
+
+.btn-two:hover::before {
+    transform: rotate(-45deg);    
+}
+
+.btn-two:hover::after {
+    transform: rotate(45deg);    
+}
+
+.btn-two:active {
+    font-weight: 700;
+    transition: none;
+}
+
+#message {
+    font-size: 25px;
+    margin: 10px auto;
+}
+
+#btn_contin {
+    line-height: 80px;
+    height: 80px;
+    text-align: center;    
+    width: 350px;
+    cursor: pointer;    
+    border: 2px solid #07b4f9;
+    display: none;
+    font-size: 25px;
+    margin: 5px auto;
+}
+
+/* Таблица не видна */
+#my_board {
+    display: none;
+}
+
+
+/* Блок таблицы (обертка) */
+.game_container {            
+    text-align: center;
+    width: 495px;
+    height: 495px;
+    margin: 0 auto;    
+}
+
+/* Блок таблицы (сетка) */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 165px 165px 165px;    
+}
+/* Блок таблицы (ячейки) */
+.cell {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    border: solid 2px;
+    border-color: #07b4f9;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/PIC/pic00.png);
+    background-size: cover;
+}
+
+
+

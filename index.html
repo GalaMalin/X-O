@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Игра "Крестики-нолики"</title>
+</head>
+<body>
+    <div class="play_game" id="my_game">
+        <div class="zag">
+            <p>Игра <br>"Крестики-нолики"</p>
+        </div>                    
+        <div class="zag_img" id="zag_img1">
+            <img src="/PIC/head.jfif">  
+        </div>
+        <div class="game_container" id="my_board">
+            <div class="board" id="gameBoard">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>            
+        </div>        
+        <div class="button_start">                                                        
+            <div id="message"></div>
+            <div id="btn_contin">
+                <span>Начать заново!</span>
+            </div>
+            <div class="btn btn-two" id="btn_start">
+                <span>Играем!</span>
+              </div>  
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
